@@ -33,4 +33,5 @@ describe 'list of todos' do
     
     @list.show_list.length.should == 1
   end
+  
 end
