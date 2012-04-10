@@ -34,4 +34,9 @@ describe 'list of todos' do
     @list.show_list.length.should == 1
   end
   
+  it "edits the description" do 
+    @list.add_task("This is a task.")
+    @list.edit_description(1, "This is no longer a task?")
+    @list.show_list[1].description.should == "This is no longer a task?"
+  end
 end
